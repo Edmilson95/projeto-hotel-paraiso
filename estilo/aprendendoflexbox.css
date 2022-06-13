@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+.container {
+    background-color: #ccc;
+    height: 500px;
+    display: flex;
+
+    flex-direction: row;
+    /*column row-reverse column reverse*/
+
+    flex-wrap: nowrap;
+    /* (permite a quebra de linha ou nao) valores = wrap, wrap-reverse */
+
+    /*flex-flow: row nowrap; /*resume os dois de cima(direction e wrap)*/
+
+    justify-content: flex-start;
+    /*(alinhamento horizontal) valores = flex-end, center, space-between, space-around*/
+
+    align-items: stretch;
+    /*alinhamento vertical) valores = flex-start, flex-end, center, baseline */
+
+    align-content: flex-start;
+    /*valores = flex-start, flex-end, center, space-between, space-around*/
+
+}
+
+
+.item {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin: 5px;
+    height: 30px;
+
+    /*flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px;
+    */
+
+    flex: 1 1 300px; /*resumo do grow shrink e basis*/
+}
+
+.article-01 {
+    flex-shrink: 3;
+}
+
+.article-02 {
+    
+}
+
+.article-03 {
+}
+
+.article-04 {
+}
